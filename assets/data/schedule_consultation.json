@@ -1,0 +1,22 @@
+{
+    "konsultan1": [
+        {
+            "hari": "senin",
+            "jam": "10:00"
+        },
+        {
+            "hari": "rabu",
+            "jam": "14:00"
+        }
+    ],
+    "konsultan2": [
+        {
+            "hari": "selasa",
+            "jam": "09:00"
+        },
+        {
+            "hari": "kamis",
+            "jam": "16:00"
+        }
+    ]
+}
