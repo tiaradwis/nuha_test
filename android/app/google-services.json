@@ -14,15 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "904581381315-sln6htudminingjl5u1stlnpgqtmvctu.apps.googleusercontent.com",
+          "client_id": "904581381315-r5ukdkn5q021nd73infvp2fhkn6jdt75.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.nuha",
-            "certificate_hash": "4fcc958bb1b26a9d66a9d8d70f32685889ea6b8e"
+            "certificate_hash": "c41612198bae1ecd4c9c91e52ed9f17ae36ab4a0"
           }
         },
         {
-          "client_id": "904581381315-mhq1rl1valmr01b2vo3e23oopid70o1s.apps.googleusercontent.com",
+          "client_id": "904581381315-agj6l7c08gtuv9tv3pjtjrh4ou5075or.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "904581381315-mhq1rl1valmr01b2vo3e23oopid70o1s.apps.googleusercontent.com",
+              "client_id": "904581381315-agj6l7c08gtuv9tv3pjtjrh4ou5075or.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

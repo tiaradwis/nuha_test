@@ -17,24 +17,15 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -52,11 +43,43 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDPNAj2dgkG2VQ8aF9XAJQJu7D2EPVeWOE',
+    appId: '1:904581381315:web:a3f4111d7dc8d1a1e7b676',
+    messagingSenderId: '904581381315',
+    projectId: 'nuha-financial',
+    authDomain: 'nuha-financial.firebaseapp.com',
+    storageBucket: 'nuha-financial.appspot.com',
+    measurementId: 'G-88CD938N9Z',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCDcpqpoqF0Z_LYgtOq-iTUUIRG1B2c8ac',
     appId: '1:904581381315:android:529a276f285f2b44e7b676',
     messagingSenderId: '904581381315',
     projectId: 'nuha-financial',
     storageBucket: 'nuha-financial.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyA4te00HNBwBdGoKLWmEUDDw4ezExavGwY',
+    appId: '1:904581381315:ios:2dac1077922eb44fe7b676',
+    messagingSenderId: '904581381315',
+    projectId: 'nuha-financial',
+    storageBucket: 'nuha-financial.appspot.com',
+    androidClientId: '904581381315-r5ukdkn5q021nd73infvp2fhkn6jdt75.apps.googleusercontent.com',
+    iosClientId: '904581381315-kn2da8l3ud3engkhn0jd82oqmdd4q8mt.apps.googleusercontent.com',
+    iosBundleId: 'com.example.nuha',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyA4te00HNBwBdGoKLWmEUDDw4ezExavGwY',
+    appId: '1:904581381315:ios:2dac1077922eb44fe7b676',
+    messagingSenderId: '904581381315',
+    projectId: 'nuha-financial',
+    storageBucket: 'nuha-financial.appspot.com',
+    androidClientId: '904581381315-r5ukdkn5q021nd73infvp2fhkn6jdt75.apps.googleusercontent.com',
+    iosClientId: '904581381315-kn2da8l3ud3engkhn0jd82oqmdd4q8mt.apps.googleusercontent.com',
+    iosBundleId: 'com.example.nuha',
   );
 }
